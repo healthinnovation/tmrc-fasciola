@@ -1,6 +1,6 @@
 # Cusco - Fieldwork 🗺️🐌🕹️🚁
 
-This repository houses mutilples scripts and files of the Cusco project, which **aimed to identify high-risk areas for schistosomiasis transmission using thermal and multispectral sensors mounted on of type MAVIC 3 drones**. 
+This repository houses mutilples scripts and files of the Cusco project, which **aimed to identify high-risk areas for fasciola transmission using thermal and multispectral sensors mounted on of type MAVIC 3 drones**. 
 
 ## 1. Study area 
 Our study area is located in the departament and province of Cusco in Peru. For this study were selected two communities, Huayllapata and Huayccaycancha.
