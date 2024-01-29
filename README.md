@@ -25,8 +25,8 @@ Our study area is located in the departament and province of Cusco in Peru. For 
  <td>Ohuay</td>
 </tr>
 <tr align='center'>
- <td><a href='#'><img src='https://gist.github.com/assets/23284899/c38f3299-0a37-481f-9b36-ee191382e264' width='500px'/></a></td>
- <td><a href='#'><img src='https://gist.github.com/assets/23284899/b260a7ea-249b-4a50-8e35-a027db39280e' width='500px'/></a></td>
+ <td><a href='#'><img src='https://gitlab.com/uploads/-/system/personal_snippet/3643812/946ffb4c2b75bbedc74cda9c45a47509/churo.png' width='500px'/></a></td>
+ <td><a href='#'><img src='https://gitlab.com/uploads/-/system/personal_snippet/3643812/8def2fcdc6f6746298dcbfc4691c65b9/ohuay.png' width='500px'/></a></td>
 </tr>
 <tr align='center'>
  <td><a href='https://healthinnovation.github.io/Churo/'>Click here to see the orthomosaic in 3D</a></td>
