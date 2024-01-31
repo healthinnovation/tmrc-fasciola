@@ -37,4 +37,6 @@ list_distance <- lapply(X = 1:nrow(house_sp),FUN = distance_min) |>
 
 # 3. Exporting the new database of distances of the waterbodies ------------
 if(!dir.exists(name_output)){dir.create(name_output)}
-write_csv(list_distance,sprintf('%s/%s',name_output,'euclidist_house_to_waterbodies.csv'))
+write_csv(
+  list_distance,
+  sprintf('%s/%s',name_output,'processed_euclidist_house_to_waterbodies.csv'))

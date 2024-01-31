@@ -31,10 +31,5 @@ rm(G);rm(R);rm(RE);rm(NIR);rm(TIR)
 # 1. Environmental variables ----------------------------------------------
 
 
-
-
 # 2. Topographic variables ------------------------------------------------
-
-
-
 
