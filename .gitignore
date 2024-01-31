@@ -6,3 +6,9 @@
 *.tif
 *.xlsx
 *.csv
+*.sdat
+*.sgrd
+*.prj
+*.xml
+*.mgrd
+*.mtab
