@@ -2,11 +2,9 @@ library(sf)
 library(tidyverse)
 library(leaflet)
 
-# Input of parameters
-path_water_body <- 'cusco-fasciola/agua_fasciola_gps.xlsx'
+# 1. Reading water bodies data  -------------------------------------------
+path_water_body <- 'fieldwork_data_raw/agua_fasciola_gps.xlsx'
 name_output <- 'output'
-
-# Reading water bodies data 
 water_bodies <- readxl::read_xlsx(path_water_body) |>
   janitor::clean_names() |> 
   separate(
@@ -39,10 +37,11 @@ write_csv(
 #   addMarkers()
 
 
-# Reading snails position data 
+
+# 2. Reading snails position data -----------------------------------------
 
 ## Churo 
-path_snails_churo <- "cusco-fasciola/Coordenadas caracoles Churu.xlsx"
+path_snails_churo <- "fieldwork_data_raw/Coordenadas caracoles Churu.xlsx"
 snails_churo <- readxl::read_xlsx(path_snails_churo) |> 
   janitor::clean_names() |> 
   separate(
@@ -59,7 +58,7 @@ snails_churo <- readxl::read_xlsx(path_snails_churo) |>
 #   sprintf('%s/%s',name_output,'processed_snails_churo.csv'))
 
 ## Huayllapata 
-path_snails_huayllapata <- "cusco-fasciola/Puntos caracoles Huayllapata.xlsx"
+path_snails_huayllapata <- "fieldwork_data_raw/Puntos caracoles Huayllapata.xlsx"
 snails_huayllapata <- readxl::read_xlsx(path_snails_churo) |> 
   janitor::clean_names() |> 
   separate(
@@ -81,3 +80,10 @@ bind_rows(
   snails_churo,
   snails_huayllapata) |> 
   write_csv(sprintf('%s/%s',name_output,'processed_snails_position.csv'))
+
+
+# 3. Reading house data ---------------------------------------------------
+path_house_data <- "fieldwork_data_raw/hogar_fasciola_gps.xlsx"
+house_data <- readxl::read_xlsx(path_house_data) |>
+  select(id_hogar,h_fecha,h_long,h_latit)
+write_csv(house_data,sprintf('%s/%s',name_output,'processed_house_data.csv'))
