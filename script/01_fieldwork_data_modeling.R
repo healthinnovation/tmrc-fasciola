@@ -1,6 +1,5 @@
 library(sf)
 library(tidyverse)
-library(leaflet)
 
 # 1. Reading water bodies data  -------------------------------------------
 path_water_body <- 'fieldwork_data_raw/agua_fasciola_gps.xlsx'
