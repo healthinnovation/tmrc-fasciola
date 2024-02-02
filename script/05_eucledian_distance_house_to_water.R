@@ -1,6 +1,5 @@
 library(sf)
 library(tidyverse)
-library(qgisprocess)
 
 # 1. Reading of csv layer of villages --------------------------------
 house <- read_csv("output/processed_house_data.csv")
