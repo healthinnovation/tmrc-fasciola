@@ -16,7 +16,7 @@ community_cluster <- kmeans_saga(
     rgb[[2]],
     rgb[[3]]
     ),
-  CLUSTER = sprintf('%s/%s_cluster.sdat',name_output,name_community),
+  CLUSTER = sprintf('%s/%s_cluster.tif',name_output,name_community),
   STATISTICS = sprintf('%s/%s_stats_cluster.csv',name_output,name_community),
   METHOD = 1,
   NCLUSTER = 5,
