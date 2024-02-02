@@ -29,15 +29,6 @@ write_csv(
   water_bodies,
   sprintf('%s/%s',name_output,'processed_water_bodies.csv'))
 
-# Simple visualization of spatial data  
-
-# water_bodies |> 
-#   leaflet() |> 
-#   addTiles() |> 
-#   addMarkers()
-
-
-
 # 2. Reading snails position data -----------------------------------------
 
 ## Churo 
@@ -53,10 +44,6 @@ snails_churo <- readxl::read_xlsx(path_snails_churo) |>
     lng = -1*as.numeric(str_extract(lng,pattern = "([0-9]+\\.[0-9]+)")),
     comunidad = 'Churo') 
 
-# write_csv(
-#   snails_churo,
-#   sprintf('%s/%s',name_output,'processed_snails_churo.csv'))
-
 ## Huayllapata 
 path_snails_huayllapata <- "fieldwork_data_raw/Puntos caracoles Huayllapata.xlsx"
 snails_huayllapata <- readxl::read_xlsx(path_snails_churo) |> 
@@ -70,12 +57,7 @@ snails_huayllapata <- readxl::read_xlsx(path_snails_churo) |>
     lng = -1*as.numeric(str_extract(lng,pattern = "([0-9]+\\.[0-9]+)")),
     comunidad = 'Huayllapata') 
 
-# write_csv(
-#   snails_huayllapata,
-#   sprintf('%s/%s',name_output,'processed_snails_huayllapata.csv'))
-
 # New database of snails position
-
 bind_rows(
   snails_churo,
   snails_huayllapata) |> 
@@ -86,5 +68,6 @@ bind_rows(
 path_house_data <- 'fieldwork_data_raw/hogar_fasciola_gps.xlsx'
 house_data <- readxl::read_xlsx(path_house_data) |>
   select(id_hogar,h_fecha,'_h_gps_longitude','_h_gps_latitude')
+
 names(house_data) <- c('id_hogar','fecha','lng','lat')
 write_csv(house_data,sprintf('%s/%s',name_output,'processed_house_data.csv'))
