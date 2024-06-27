@@ -27,17 +27,19 @@ R <- resample(R, G)
 RE <- resample(RE, G)
 NIR <- resample(NIR, G)
 TIR <- resample(TIR[[1]], G)
-DEM <- rast(PATH_DEM, G)
+DEM <- rast(DEM, G)
 
 # New stack raster with 5 bands
-stack_raster <- rast(list(G, R, RE, NIR, TIR, DEN))
+stack_raster <- rast(list(G, R, RE, NIR, TIR, DEM))
 names(stack_raster) <- c("green", "red", "redge", "nir", "tir", "dem")
 
 # Remove bands of list
-rm(G);rm(R);rm(RE);rm(NIR);rm(TIR);rm(DEM)
+rm(G);rm(R);rm(RE);rm(NIR);rm(TIR)
+if(!dir.exists("output")){dir.create("output")}
 writeRaster(stack_raster, sprintf("output/stack_%s.tif", name_community))
 
 # 1. Environmental variables ----------------------------------------------
+if(!dir.exists(name_output)){dir.create(name_output)}
 veg_index <- qgis_function("sagang:vegetationindexslopebased")
 veg_index(
   RED = stack_raster[["red"]],
@@ -58,10 +60,7 @@ topo_index(
 )
 
 # 3. New stack for modeling -----------------------------------------------
-if (!dir.exists(name_output)){dir.create(name_output)}
-
 list_covab <- list.files(path = name_output, pattern = "*.tif$", full.names = TRUE)
 stack_covab <- rast(list_covab)
-
 file.remove(sprintf("output/stack_%s.tif", name_community))
 writeRaster(stack_covab, sprintf("output/stack_covab_%s.tif", name_community))
