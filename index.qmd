@@ -1,0 +1,39 @@
+---
+page-layout: full
+comments: false
+css: css/innova.css
+---
+
+::: {#welcome-message-title .h1}
+:::
+
+::: grid
+::: {.g-col-12 .g-col-md-10 .g-start-md-2}
+:::
+
+::: {.g-col-12 .g-col-md-10 .g-start-md-2}
+::: {#welcome-message-title2 .h3}
+<p class="multipleStrings">
+
+</p>
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .mb-2}
+
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .mb-2}
+
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .mb-2}
+
+:::
+:::
+:::
