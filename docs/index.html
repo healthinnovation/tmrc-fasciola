@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Innovalab</title>
+<title>Innovalab with IMT Cusco</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -46,7 +46,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -55,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -64,11 +71,11 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/innova.css">
-<meta property="og:title" content="">
+<meta property="og:title" content="Innovalab with IMT Cusco">
 <meta property="og:description" content="Harmonize is a collaboration project with Colombia, Brazil, Dominican Republic and Peru, led by the Barcelona Supercomputing Center and funded by Wellcome Trust, that aims to develop a digital infrastructure to harmonize climate, health and drone data for every country in the consortium.">
 <meta property="og:image" content="https://raw.githubusercontent.com/healthinnovation/Harmonize-Project/main/img/twitter-card.png">
-<meta property="og:site-name" content="Innovalab">
-<meta name="twitter:title" content="">
+<meta property="og:site_name" content="Innovalab with IMT Cusco">
+<meta name="twitter:title" content="Innovalab with IMT Cusco">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/healthinnovation/Harmonize-Project/main/img/twitter-card.png">
 <meta name="twitter:creator" content="@antony_barja">
 <meta name="twitter:site" content="@antony_barja">
@@ -79,14 +86,14 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="https://raw.githubusercontent.com/healthinnovation/Harmonize-Project/main/img/harmonize.svg" alt="" class="navbar-logo">
+    <img src="https://epi-rgee.netlify.app/logos/logo_v2.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Innovalab</span>
+    <span class="navbar-title">Innovalab with IMT Cusco</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -96,29 +103,29 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./webmap.qmd" rel="" target="">
- <span class="menu-text">Webmap</span></a>
+    <a class="nav-link" href="./webmap.html"> 
+<span class="menu-text">Webmap</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/healthinnovation/harmonize" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/healthinnovation/harmonize"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/innovalab_imt" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/innovalab_imt"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -134,34 +141,127 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div id="welcome-message-title" class="h1">
 
-</div>
 <div class="grid">
-<div class="g-col-12 g-col-md-10 g-start-md-2">
+<div class="g-col-10 g-start-2 g-col-sm-10 g-start-sm-2 g-col-md-10 g-start-md-2 g-col-lg-5 g-start-lg-2">
+<div class="welcome-title">
+<h3 class="anchored">
+<mark style="background-color: rgba(230,255,41,0.8);color:black;">Welcome to Cusco project 🗺️🐌🕹️🚁!</mark>
+</h3>
+</div>
+<div class="welcome-message">
+<p><mark style="background-color: rgba(0,0,0,0.7); color: white;"> This website showcases data visualizations on snails, water bodies, Fasciola hepatica cases <br>, environmental indices,temperature, and other data collected in the TMRC project.<br>The primary objective is to characterize the microenvironment of communities <br> in Cusco using high-resolution images, including processed images from multispectral <br>and thermal drones.These tools enable us to identify potential areas for water body <br>formation and snail proliferation, there by contributing to the understanding <br>and management of these phenomena in the local environment. </mark></p>
+</div>
+</div>
+<div class="g-col-0 g-start-col-0 g-col-lg-5 welcome-hero">
 
 </div>
-<div class="g-col-12 g-col-md-10 g-start-md-2">
-<div id="welcome-message-title2" class="h3">
-<p class="multipleStrings">
+</div>
+<p><br><br></p>
+<div class="grid">
+<div class="g-col-10 g-start-2 g-col-md-4 g-start-md-3">
+<div class="card mb-2">
+<div class="card-body">
+<h5 class="card-title anchored" style="color:white;">
+<p>The first fieldwork</p>
+</h5>
+
+
+<p>
+Huayllapata
 </p>
-</div>
-</div>
-<div class="g-col-12 g-col-md-4">
-<div class="card mb-2">
 
-</div>
-</div>
-<div class="g-col-12 g-col-md-4">
-<div class="card mb-2">
 
-</div>
-</div>
-<div class="g-col-12 g-col-md-4">
-<div class="card mb-2">
 
+
+<a href="#"><img src="https://user-images.githubusercontent.com/23284899/246626625-0e95abd8-46b5-4375-af23-04d28a8e90f2.png" class="transparent-image" width="360px"></a>
+
+
+<p class="card-text">
+</p><p>A collection of charts, infographics and dataviz designs created for previous projects &amp; community-driven data challenges.</p>
+<p></p>
+<p><a href="https://healthinnovation.github.io/huayllapata/" class="btn btn-primary stretched-link">Click here</a></p>
 </div>
 </div>
+</div>
+<div class="g-col-10 g-start-2 g-col-md-4">
+<div class="card mb-2">
+<div class="card-body">
+<h5 class="card-title anchored" style="color:white;">
+<p>The first fieldwork</p>
+</h5>
+
+
+<p>
+Huayccaycancha
+</p>
+
+
+
+
+<a href="#"><img src="https://user-images.githubusercontent.com/23284899/246626736-b57646db-bbe3-4fb9-bbd0-39a8474df40c.png" class="transparent-image" width="360px"></a>
+
+
+<p class="card-text">
+</p><p>A collection of charts, infographics and dataviz designs created for previous projects &amp; community-driven data challenges.</p>
+<p></p>
+<p><a href="https://healthinnovation.github.io/huayccaycancha/" class="btn btn-primary stretched-link">Click here</a></p>
+</div>
+</div>
+</div>
+<div class="g-col-10 g-start-2 g-col-md-4 g-start-md-3">
+<div class="card mb-2">
+<div class="card-body">
+<h5 class="card-title anchored" style="color:white;">
+<p>The second fieldwork</p>
+</h5>
+
+
+<p>
+Churo
+</p>
+
+
+
+
+<a href="#"><img src="https://gitlab.com/uploads/-/system/personal_snippet/3643812/946ffb4c2b75bbedc74cda9c45a47509/churo.png" class="transparent-image" width="360px"></a>
+
+
+<p class="card-text">
+</p><p>A collection of charts, infographics and dataviz designs created for previous projects &amp; community-driven data challenges.</p>
+<p></p>
+<p><a href="https://healthinnovation.github.io/Churo/" class="btn btn-primary stretched-link">Click here</a></p>
+</div>
+</div>
+</div>
+<div class="g-col-10 g-start-2 g-col-md-4">
+<div class="card mb-2">
+<div class="card-body">
+<h5 class="card-title anchored" style="color:white;">
+<p>The second fieldwork</p>
+</h5>
+
+
+<p>
+Ohuay
+</p>
+
+
+
+
+<a href="#"><img src="https://gitlab.com/uploads/-/system/personal_snippet/3643812/8def2fcdc6f6746298dcbfc4691c65b9/ohuay.png" class="transparent-image" width="360px"></a>
+
+
+<p class="card-text">
+</p><p>A collection of charts, infographics and dataviz designs created for previous projects &amp; community-driven data challenges.</p>
+<p></p>
+<p><a href="https://healthinnovation.github.io/Ohuay/" class="btn btn-primary stretched-link">Click here</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="welcome-message">
+
 </div>
 
 
@@ -246,10 +346,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -259,8 +376,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -272,7 +398,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -316,6 +565,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -341,6 +591,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -401,6 +677,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

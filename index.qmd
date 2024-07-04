@@ -4,36 +4,168 @@ comments: false
 css: css/innova.css
 ---
 
-::: {#welcome-message-title .h1}
+::: grid
+::: {.g-col-10 .g-start-2 .g-col-sm-10 .g-start-sm-2 .g-col-md-10 .g-start-md-2 .g-col-lg-5 .g-start-lg-2}
+::: welcome-title
+<h3><mark style="background-color: rgba(230,255,41,0.8);color:black;">Welcome to Cusco project 🗺️🐌🕹️🚁!</mark></h3>
 :::
+
+::: welcome-message
+<mark style="background-color: rgba(0,0,0,0.7); color: white;"> This website showcases data visualizations on snails, water bodies, Fasciola hepatica cases <br>, environmental indices,temperature, and other data collected in the TMRC project.<br>The primary objective is to characterize the microenvironment of communities <br> in Cusco using high-resolution images, including processed images from multispectral <br>and thermal drones.These tools enable us to identify potential areas for water body <br>formation and snail proliferation, there by contributing to the understanding <br>and management of these phenomena in the local environment. </mark>
+:::
+:::
+
+::: {.g-col-0 .g-start-col-0 .g-col-lg-5 .welcome-hero}
+:::
+:::
+
+<br><br>
 
 ::: grid
-::: {.g-col-12 .g-col-md-10 .g-start-md-2}
-:::
+::: {.g-col-10 .g-start-2 .g-col-md-4 .g-start-md-3}
+::: {.card .mb-2}
+::: card-body
+<h5 class="card-title" style="color:white;">
 
-::: {.g-col-12 .g-col-md-10 .g-start-md-2}
-::: {#welcome-message-title2 .h3}
-<p class="multipleStrings">
+The first fieldwork
+
+</h5>
+
+<tr align="center">
+
+<td>
+
+<p>Huayllapata</p>
+
+</td>
+
+</tr>
+
+<tr align="center">
+
+<td><a href='#'><img src="https://user-images.githubusercontent.com/23284899/246626625-0e95abd8-46b5-4375-af23-04d28a8e90f2.png" class="transparent-image" width="360px"/></a></td>
+
+</tr>
+
+<p class="card-text">
+
+A collection of charts, infographics and dataviz designs created for previous projects & community-driven data challenges.
 
 </p>
+
+<a href="https://healthinnovation.github.io/huayllapata/" class="btn btn-primary stretched-link">Click here</a>
+:::
 :::
 :::
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-10 .g-start-2 .g-col-md-4}
 ::: {.card .mb-2}
+::: card-body
+<h5 class="card-title" style="color:white;">
 
+The first fieldwork
+
+</h5>
+
+<tr align="center">
+
+<td>
+
+<p>Huayccaycancha</p>
+
+</td>
+
+</tr>
+
+<tr align="center">
+
+<td><a href='#'><img src="https://user-images.githubusercontent.com/23284899/246626736-b57646db-bbe3-4fb9-bbd0-39a8474df40c.png" class="transparent-image" width="360px"/></a></td>
+
+</tr>
+
+<p class="card-text">
+
+A collection of charts, infographics and dataviz designs created for previous projects & community-driven data challenges.
+
+</p>
+
+<a href="https://healthinnovation.github.io/huayccaycancha/" class="btn btn-primary stretched-link">Click here</a>
 :::
 :::
+:::
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-10 .g-start-2 .g-col-md-4 .g-start-md-3}
 ::: {.card .mb-2}
+::: card-body
+<h5 class="card-title" style="color:white;">
 
+The second fieldwork
+
+</h5>
+
+<tr align="center">
+
+<td>
+
+<p>Churo</p>
+
+</td>
+
+</tr>
+
+<tr align="center">
+
+<td><a href='#'><img src="https://gitlab.com/uploads/-/system/personal_snippet/3643812/946ffb4c2b75bbedc74cda9c45a47509/churo.png" class="transparent-image" width="360px"/></a></td>
+
+</tr>
+
+<p class="card-text">
+
+A collection of charts, infographics and dataviz designs created for previous projects & community-driven data challenges.
+
+</p>
+
+<a href="https://healthinnovation.github.io/Churo/" class="btn btn-primary stretched-link">Click here</a>
 :::
 :::
+:::
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-10 .g-start-2 .g-col-md-4}
 ::: {.card .mb-2}
+::: card-body
+<h5 class="card-title" style="color:white;">
 
+The second fieldwork
+
+</h5>
+
+<tr align="center">
+
+<td>
+
+<p>Ohuay</p>
+
+</td>
+
+</tr>
+
+<tr align="center">
+
+<td><a href='#'><img src="https://gitlab.com/uploads/-/system/personal_snippet/3643812/8def2fcdc6f6746298dcbfc4691c65b9/ohuay.png" class="transparent-image" width="360px"/></a></td>
+
+</tr>
+
+<p class="card-text">
+
+A collection of charts, infographics and dataviz designs created for previous projects & community-driven data challenges.
+
+</p>
+
+<a href="https://healthinnovation.github.io/Ohuay/" class="btn btn-primary stretched-link">Click here</a>
 :::
 :::
+:::
+:::
+
+::: welcome-message
 :::

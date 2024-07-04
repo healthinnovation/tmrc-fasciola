@@ -1,13 +1,12 @@
 body {
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    background-image:url("https://raw.githubusercontent.com/healthinnovation/Harmonize-Project/main/img/background.JPG");
-    color:#FFF;
-    font-family:'Roboto Slab', serif;
+    background-image: url("https://raw.githubusercontent.com/healthinnovation/cusco/gh-pages/background/background.jpg");
+    color: #FFF;
+    font-family: 'Roboto Slab', serif;
     background-size: cover;
-
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
 }
-
 
 body .page-columns {
     display: flex;
@@ -33,27 +32,16 @@ body .page-columns {
     margin-left: 2rem;
 }
 
-.navbar-dark .navbar-nav .nav-link{
-    color: #ffffff;
-}
 
-.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
-    color: #ffffff;
-}
-
-.navbar-dark .navbar-brand {
-    color: #ffffff;
-}
 
 h5, .h5 {
     font-size: 1.2rem;
 }
 
-
-.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
-    width: 23px;
-    height: 23px;
-    color: #ffffff;
-    opacity: 1;
+p {
+  color: white;
 }
 
+.transparent-image {
+    opacity: 0.9; /* Ajusta el valor entre 0 (totalmente transparente) y 1 (totalmente opaco) */
+}

@@ -1,0 +1,5 @@
+rgb,url
+churo,https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/3dd20ff6c80036e9f973edd88a9038bf-ff2c5f9a61c5e0555956ec8454647bde/tiles/{z}/{x}/{y}
+ohuay,https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/21a8e0d52395bcd61365a4d4831ba2cd-2298d42c58829832477c30dfeb14a15b/tiles/{z}/{x}/{y}
+huayllapata,https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/3912800278bc53fc4995a32e648993a6-961b462c5e62b464789fbf3a7dd4edb4/tiles/{z}/{x}/{y}
+huaccaycancha,https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/40ac101fd52043e2e13c2c0fb57312d1-4bcd55d0895d33d113c851ecd1233bef/tiles/{z}/{x}/{y}
