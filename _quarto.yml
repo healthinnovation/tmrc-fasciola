@@ -6,7 +6,7 @@ website:
   favicon: img/harmonize.ico
   title: "Innovalab with IMT Cusco"
   twitter-card: 
-    image: "https://raw.githubusercontent.com/healthinnovation/Harmonize-Project/main/img/twitter-card.png"
+    image: "https://raw.githubusercontent.com/healthinnovation/cusco/gh-pages/background/background.jpg"
     creator: "@antony_barja"
     site: "@antony_barja"
   open-graph:
