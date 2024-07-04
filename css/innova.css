@@ -1,11 +1,16 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("https://raw.githubusercontent.com/healthinnovation/cusco/gh-pages/background/background.jpg");
     color: #FFF;
     font-family: 'Roboto Slab', serif;
     background-size: cover;
-    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+ /* Asegura que el fondo cubra toda la altura de la ventana */
 }
 
 body .page-columns {
