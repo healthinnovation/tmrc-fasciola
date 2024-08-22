@@ -1,5 +1,0 @@
----
-page-layout: custom
-css: css/about.css
----
-
