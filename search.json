@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Hola",
+    "section": "",
+    "text": "Hola"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Carousel con 4 Cards Responsivo\n  \n  \n    \n      \n      \n        \n          \n            \n              \n              \n                Card 1\n                Some quick example text to build on the card title and make up the bulk of the card's content.\n                Go somewhere\n              \n            \n          \n          \n          \n          \n            \n              \n              \n                Card 2\n                Some quick example text to build on the card title and make up the bulk of the card's content.\n                Go somewhere\n              \n            \n          \n          \n          \n          \n            \n              \n              \n                Card 3\n                Some quick example text to build on the card title and make up the bulk of the card's content.\n                Go somewhere\n              \n            \n          \n          \n          \n          \n            \n              \n              \n                Card 4\n                Some quick example text to build on the card title and make up the bulk of the card's content.\n                Go somewhere\n              \n            \n          \n        \n      \n    \n    \n    \n    \n      \n      Previous\n    \n    \n      \n      Next"
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "",
+    "section": "",
+    "text": "maplibre(\n  style = maptiler_style(\n    style_name = \"openstreetmap\",\n    api_key = \"hdV4nOYKQa4di4tH4qr2\")) |&gt; \n  add_fullscreen_control() |&gt; \n  add_navigation_control()"
+  }
+]
