@@ -1,7 +1,7 @@
+*.Rproj.user
+*.quarto/
+data/
+ddbbss/
 .Rproj.user
-.Rhistory
-.RData
-.Ruserdata
 
 /.quarto/
-./data/*

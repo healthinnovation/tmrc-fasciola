@@ -1,0 +1,97 @@
+/* Style of navbar */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.navbar {
+    background-color: #000814;
+    color: #3c096c;
+}
+
+/*Style of titulo*/
+.titulo {
+    margin-left: 1.5rem;
+}
+
+.titulo .h3{
+    color:black;
+}
+
+.titulo mark{
+    background-color: yellow;
+}
+
+/*Style of resumen*/
+.resumen {
+    margin-left: 1.5rem;
+    text-align:left;
+    background-color:#0909096b; 
+    color: white;
+}
+
+
+
+
+/* Style of Logo */
+.navbar-logo {
+    max-height: 2.5rem;
+}
+
+.nav-link i {
+    color:white;
+}
+
+.nav-link{
+    color: white;
+}
+
+.navbar-title{
+    color:white;
+}
+
+.navbar-nav .nav-link.active {
+  color: yellow;
+}
+
+/*Style of footer*/
+.nav-footer {
+    background: #000814;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+
+/* Style of main page - background*/
+
+.body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 100% del viewport height */
+    width: 100%;
+    background-image: url("background/background.jpg");
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container {
+    padding: 20px; /* Padding para el contenido */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente para el contenido */
+}
+
+
+/*Sytle of cards*/
+.card {
+    background-color:#0909096b;
+    color:white;
+  }
+
+/*Color of buttom*/
+
+.btn-warning {
+    background-color: #ffee32;
+    color: black;
+    border-color: black;
+}
+
+.btn-warning:hover {
+    background-color: #0a58ff; /* Cambia el color de fondo al hacer hover */
+    border-color: #0a58ff; /* Cambia el color del borde al hacer hover */
+  }

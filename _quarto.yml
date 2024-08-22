@@ -1,0 +1,39 @@
+project:
+   type: website
+
+website:
+  favicon: icon/logo.svg
+  twitter-card: true
+  description: This repository houses mutilples scripts and files of the Cusco project, which aimed to identify high-risk areas for fasciola transmission using thermal and multispectral sensors mounted on of type MAVIC 3 drones.
+  open-graph: true
+  navbar:
+    title: ""
+    logo: icon/logos.svg
+
+    right: 
+      - icon: github
+        href: https://github.com
+      - icon: twitter
+        href: https://github.com
+      
+    left:
+      - icon: house-fill
+        text: Home
+        href: index.qmd
+
+      - icon: geo-alt-fill
+        text: Study area
+        href: map.qmd
+      
+
+  search: false
+  page-footer:
+    left:  Developed by Antony Barja <br> geografo.pe
+    right: Made with Quarto and Vscode 
+
+mainfont: Josefin Sans
+format: 
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
