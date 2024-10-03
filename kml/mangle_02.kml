@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="mangle_02" id="mangle_02">
+	<SimpleField name="id" type="float"></SimpleField>
+	<SimpleField name="area_km2" type="float"></SimpleField>
+</Schema>
+<Folder><name>mangle_02</name>
+  <Placemark>
+	<name>mangle_02</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#mangle_02">
+		<SimpleData name="id">57</SimpleData>
+		<SimpleData name="area_km2">0.866025</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-78.2902990370544,-7.09780764096229 -78.2857373621926,-7.09527324757356 -78.28125926729,-7.09795229974127 -78.2813428403547,-7.10316581159979 -78.2859046089202,-7.10570022291774 -78.2903827107146,-7.10302110441568 -78.2902990370544,-7.09780764096229</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

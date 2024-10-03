@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="polloc_01" id="polloc_01">
+	<SimpleField name="id" type="float"></SimpleField>
+	<SimpleField name="area_km2" type="float"></SimpleField>
+</Schema>
+<Folder><name>polloc_01</name>
+  <Placemark>
+	<name>polloc_01</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#polloc_01">
+		<SimpleData name="id">25</SimpleData>
+		<SimpleData name="area_km2">0.866025</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-78.3357491950837,-7.11272138984234 -78.3311872925966,-7.11018762968838 -78.3267095603281,-7.11286706576373 -78.3267937241427,-7.11808032869277 -78.331355721012,-7.12061410651614 -78.3358334596817,-7.11793460370882 -78.3357491950837,-7.11272138984234</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

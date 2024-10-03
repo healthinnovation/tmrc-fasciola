@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="namora" id="namora">
+	<SimpleField name="id" type="float"></SimpleField>
+	<SimpleField name="area_km2" type="float"></SimpleField>
+</Schema>
+<Folder><name>namora</name>
+  <Placemark>
+	<name>namora</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#namora">
+		<SimpleData name="id">97</SimpleData>
+		<SimpleData name="area_km2">0.866025</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-78.2820124655215,-7.14487383960699 -78.2774502135539,-7.14233956081583 -78.2729717008833,-7.14501875891019 -78.2730554328606,-7.15023230233447 -78.2776177788019,-7.15276659940047 -78.2820962987894,-7.15008733473507 -78.2820124655215,-7.14487383960699</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>
