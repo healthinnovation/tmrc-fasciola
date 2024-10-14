@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ohuay_zona_01.kml</name>
+	<Schema name="hexagono_ohuay_1" id="hexagono_ohuay_1">
+		<SimpleField type="float" name="fid"></SimpleField>
+		<SimpleField type="float" name="id"></SimpleField>
+		<SimpleField type="string" name="village"></SimpleField>
+		<SimpleField type="float" name="area_ha"></SimpleField>
+		<SimpleField type="float" name="area_km2"></SimpleField>
+	</Schema>
+	<Placemark>
+		<Style>
+			<LineStyle>
+				<color>ff0000ff</color>
+			</LineStyle>
+			<PolyStyle>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<ExtendedData>
+			<SchemaData schemaUrl="#hexagono_ohuay_1">
+				<SimpleData name="fid">8</SimpleData>
+				<SimpleData name="id">5</SimpleData>
+				<SimpleData name="village">EL VARRILLAL</SimpleData>
+				<SimpleData name="area_ha">86.6</SimpleData>
+				<SimpleData name="area_km2">0.866</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<gx:balloonVisibility>1</gx:balloonVisibility>
+		<MultiGeometry>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.6939767689333,-13.4881763893809,0 -71.6893405402885,-13.4856106332654,0 -71.684751841139,-13.4882569097114,0 -71.6847474065478,-13.4934401050905,0 -71.6893666471246,-13.4960352499214,0 -71.6939728743077,-13.4934180025072,0 -71.6939767689333,-13.4881763893809,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>

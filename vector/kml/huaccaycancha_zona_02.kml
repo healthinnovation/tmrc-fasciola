@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>HUACCAYCANCHA.kml</name>
+	<Schema name="hexagono_esri" id="S_hexagono_esri_DDS">
+		<SimpleField type="double" name="fid"><displayName>&lt;b&gt;fid&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="id_2"><displayName>&lt;b&gt;id&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="COMUNIDAD"><displayName>&lt;b&gt;COMUNIDAD&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="falseColor">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>fid</b></td><td>$[hexagono_esri/fid]</td></tr>
+  <tr><td><b>id</b></td><td>$[hexagono_esri/id_2]</td></tr>
+  <tr><td><b>COMUNIDAD</b></td><td>$[hexagono_esri/COMUNIDAD]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<styleUrl>#falseColor</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_hexagono_esri_DDS">
+				<SimpleData name="fid">2</SimpleData>
+				<SimpleData name="id_2">63</SimpleData>
+				<SimpleData name="COMUNIDAD">HUACCAYCANCHA 2</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<gx:balloonVisibility>1</gx:balloonVisibility>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-71.67891884536954,-13.48645251330067,0 -71.67390668840869,-13.48931810502546,0 -71.66891893469774,-13.48641024563199,0 -71.66894333794764,-13.48063679451374,0 -71.67395549490847,-13.47777120278897,0 -71.67894324861945,-13.48067906218242,0 -71.67891884536954,-13.48645251330067,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

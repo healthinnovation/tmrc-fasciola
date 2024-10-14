@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Churu_zona_02.kml</name>
+	<Schema name="hexagonos_churu" id="hexagonos_churu">
+		<SimpleField type="float" name="fid"></SimpleField>
+		<SimpleField type="float" name="id"></SimpleField>
+		<SimpleField type="string" name="village"></SimpleField>
+		<SimpleField type="float" name="area_ha"></SimpleField>
+		<SimpleField type="float" name="area_km2"></SimpleField>
+	</Schema>
+	<Placemark>
+		<Style>
+			<LineStyle>
+				<color>ff0000ff</color>
+			</LineStyle>
+			<PolyStyle>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<ExtendedData>
+			<SchemaData schemaUrl="#hexagonos_churu">
+				<SimpleData name="fid">8</SimpleData>
+				<SimpleData name="id">5</SimpleData>
+				<SimpleData name="village">EL VARRILLAL</SimpleData>
+				<SimpleData name="area_ha">86.6</SimpleData>
+				<SimpleData name="area_km2">0.866</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<gx:balloonVisibility>1</gx:balloonVisibility>
+		<MultiGeometry>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.57158438443879,-13.5057370774405,0 -71.56694972849419,-13.5031692829404,0 -71.5623598433463,-13.505812914199,0 -71.56235266595721,-13.5109954792309,0 -71.5669703175719,-13.5135926512671,0 -71.57157771635541,-13.5109780551238,0 -71.57158438443879,-13.5057370774405,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>
