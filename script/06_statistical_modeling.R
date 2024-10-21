@@ -5,9 +5,6 @@ library(h3jsr)
 library(qgisprocess)
 library(tidymodels)
 library(MASS)
-library(cptcity)
-library(basemaps)
-library(extrafont)
 library(poissonreg)
 
 # 0. Community selected --------------------------------------------------
@@ -16,7 +13,6 @@ path_gpkg <- "vector/gpkg/sdb_cusco.gpkg"
 community <- "huayllapata"
 
 region <- st_read(dsn = path_gpkg, layer = community)
-
 # Hexagrid H3
 hex <- region %>% polygon_to_cells(res = 12, simple = FALSE) 
 region_hex <- cell_to_polygon(hex$h3_addresses, simple = FALSE)
@@ -117,7 +113,6 @@ tidy(logistic_fit) %>% View()
 logistic_predictions_spatial <- logistic_fit %>%
   predict(new_data = database_sf, type = "prob") %>%
   bind_cols(database_sf)
-
 
 # 5. Poisson model --------------------------------------------------------
 

@@ -5,7 +5,7 @@ ee_Initialize(user = "antony.barja@upch.pe",drive = TRUE)
 
 
 # 1. Study area -----------------------------------------------------------
-spatial_data <- "geometry/huayllapata.kml"
+spatial_data <- "vector/kml/huayllapata.kml"
 region <- st_read(spatial_data) |> 
   st_transform(crs = 32718) |> 
   st_buffer(dist = 5000) |> 
@@ -33,11 +33,11 @@ ee_as_rast(
   region = region_ee,
   scale = 4638.3,
   crs = 'epsg:32718',
-  dsn = 'terraclimate/terraclimate_pr.tif')
+  dsn = 'input-downscaling/terraclimate_pr.tif')
 
 ee_as_rast(
   image = soil,
   region = region_ee,
   scale = 4638.3,
   crs = 'epsg:32718',
-  dsn = 'terraclimate/terraclimate_soil.tif')
+  dsn = 'input-downscaling/terraclimate_soil.tif')

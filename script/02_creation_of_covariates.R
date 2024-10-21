@@ -5,7 +5,7 @@ library(sf)
 # 1. Defined parameters ---------------------------------------------------
 name_output <- "covariable"
 name_community <- "huayllapata"
-spatial_data <- "geometry/huayllapata.kml"
+spatial_data <- "vector/kml/huayllapata.kml"
 # 2. Reading spatial data -------------------------------------------------
 
 # Spatial geometry 
@@ -58,6 +58,13 @@ veg_index(
   TTVI =sprintf("%s/%s_ttvi.tif", name_output, name_community)  
 )
 
+# evi_fun <- qgis_function(algorithm = "sagang:enhancedvegetationindex")
+# evi_fun(
+#   RED = stack_raster[["red"]],
+#   NIR = stack_raster[["nir"]],
+#   EVI = sprintf("%s/%s_evi.tif", name_output, name_community)
+#   )
+
 # 2. Topographic variables ------------------------------------------------
 topo_index <- qgis_function("sagang:basicterrainanalysis")
 topo_index(
@@ -83,30 +90,24 @@ tpi_index(
 )
 
 # 3. downscaling precipitacion y humedad ----------------------------------
-precipation <- rast("terraclimate/terraclimate_pr.tif") |> 
+precipation <- rast("input-downscaling/terraclimate_pr.tif") |> 
   resample(G)
 
-worldclim_pp <- rast("worldclim/worldclim_pp.tif") |> 
+humedad<- rast("input-downscaling/terraclimate_soil.tif") |> 
   resample(G)
 
-# covariables for downscaling
+# covariables for downscaling for precipitation and soil moisture
 ndvi <- rast("covariable/huayllapata_ndvi.tif")
 slope <- rast("covariable/huayllapata_slope.tif")
 aspect <- rast("covariable/huayllapata_aspect.tif")
+temp <- stack_raster[["temp"]]
 
 downscaling <- qgis_function("sagang:gwrforgriddownscaling")
 downscaling(
-  PREDICTORS =  qgis_list_input(ndvi,slope,aspect),
-  REGRESSION =  sprintf("%s/%s_worldclim_pp.tif", name_output, name_community),,
-  DEPENDENT = worldclim_pp)
-
-downscaling(
-  PREDICTORS =  qgis_list_input(ndvi,slope,aspect),
+  PREDICTORS =  qgis_list_input(ndvi,slope,aspect,temp),
   REGRESSION =  sprintf("%s/%s_pp.tif", name_output, name_community),,
   DEPENDENT = precipation)
 
-humedad <- rast("terraclimate/terraclimate_soil.tif") |> resample(G)
-downscaling <- qgis_function("sagang:gwrforgriddownscaling")
 downscaling(
   PREDICTORS = qgis_list_input(ndvi,slope,aspect),
   REGRESSION = sprintf("%s/%s_soil.tif", name_output, name_community),
